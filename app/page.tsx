@@ -12,7 +12,7 @@ const projects = [
   { name: "Prompt Foundation", type: "AI productivity", status: "Built", href: "https://prompts.thepointsolutions.com/", description: "A practical prompt-building tool for turning rough ideas into reusable instructions and workflows.", tags: ["Prompts", "Tooling", "UX"] },
   { name: "Content Multiplier", type: "Marketing systems", status: "In progress", href: "https://contentx.thepointsolutions.com/", description: "A content engine that helps restaurants and local businesses turn one idea into a week of useful marketing.", tags: ["Content", "Marketing", "MVP"] },
   { name: "Restaurant Picker", type: "Consumer app", status: "Built", href: "https://rpicks.thepointsolutions.com/", description: "A low-friction way for two people to privately choose a restaurant they will both actually enjoy.", tags: ["Matching", "Preferences", "Mobile"] },
-  { name: "AI Legal Intake", type: "Professional services", status: "Prototype", description: "An intake flow designed to turn messy first contacts into organized, actionable case information.", tags: ["Intake", "AI", "Legal"] },
+  { name: "AI Legal Intake", type: "Professional services", status: "Prototype", href: "https://www.getmarcy.com/LAWAI", description: "An intake flow designed to turn messy first contacts into organized, actionable case information.", tags: ["Intake", "AI", "Legal"] },
   { name: "Obsidian Mission Sync", type: "Personal knowledge", status: "Connected", description: "A bridge between a local knowledge base and the systems used to plan and run ongoing work.", tags: ["Obsidian", "MCP", "Notes"] },
 ];
 
