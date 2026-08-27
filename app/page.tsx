@@ -6,17 +6,17 @@ export const metadata: Metadata = {
 };
 
 const projects = [
-  { name: "Hermes Mission Control", type: "AI infrastructure", status: "In progress", href: "https://getsreviews.app/", description: "A command center for coordinating agents, queues, approvals, memory, handoffs, and live work.", tags: ["Agents", "Orchestration", "Dashboard"] },
+  { name: "Hermes Mission Control", type: "AI infrastructure", status: "In Progress", href: "https://getsreviews.app/", description: "A command center for coordinating agents, queues, approvals, memory, handoffs, and live work.", tags: ["Agents", "Orchestration", "Dashboard"] },
   { name: "Baseball Workshop", type: "Sports technology", status: "Built", href: "https://Baseballworkshop.com", description: "A video-based coaching workspace for players, parents, and coaches to turn swings into useful feedback.", tags: ["Video", "Coaching", "Analysis"] },
   { name: "Marcy", type: "Small business AI", status: "Built", href: "https://www.getmarcy.com/", description: "An AI receptionist that captures leads, answers questions, sends texts, and keeps owners in the loop.", tags: ["Leads", "SMS", "Automation"] },
   { name: "Prompt Foundation", type: "AI productivity", status: "Built", href: "https://prompts.thepointsolutions.com/", description: "A practical prompt-building tool for turning rough ideas into reusable instructions and workflows.", tags: ["Prompts", "Tooling", "UX"] },
-  { name: "Content Multiplier", type: "Marketing systems", status: "In progress", href: "https://contentx.thepointsolutions.com/", description: "A content engine that helps restaurants and local businesses turn one idea into a week of useful marketing.", tags: ["Content", "Marketing", "MVP"] },
+  { name: "Content Multiplier", type: "Marketing systems", status: "In Progress", href: "https://contentx.thepointsolutions.com/", description: "A content engine that helps restaurants and local businesses turn one idea into a week of useful marketing.", tags: ["Content", "Marketing", "MVP"] },
   { name: "Restaurant Picker", type: "Consumer app", status: "Built", href: "https://rpicks.thepointsolutions.com/", description: "A low-friction way for two people to privately choose a restaurant they will both actually enjoy.", tags: ["Matching", "Preferences", "Mobile"] },
   { name: "AI Legal Intake", type: "Professional services", status: "Prototype", href: "https://www.getmarcy.com/LAWAI", description: "An intake flow designed to turn messy first contacts into organized, actionable case information.", tags: ["Intake", "AI", "Legal"] },
   { name: "Obsidian Mission Sync", type: "Personal knowledge", status: "Connected", description: "A bridge between a local knowledge base and the systems used to plan and run ongoing work.", tags: ["Obsidian", "MCP", "Notes"] },
 ];
 
-const statusClass: Record<string, string> = { Built: "built", "In progress": "progress", Prototype: "prototype", Connected: "connected" };
+const statusClass: Record<string, string> = { Built: "built", "In Progress": "progress", Prototype: "prototype", Connected: "connected" };
 
 export default function Home() {
   return (
