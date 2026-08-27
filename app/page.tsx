@@ -18,6 +18,13 @@ const projects = [
 
 const statusClass: Record<string, string> = { Built: "built", "In Progress": "progress", Prototype: "prototype", Connected: "connected" };
 
+const labProjects = [
+  ["01", "Content Generator", "A curated blog creator for AI news and information—great for topical authority and website SEO."],
+  ["02", "Cold Email System", "Finds leads, adds them to an email delivery system, and sends targeted outreach."],
+  ["03", "Job Hunter", "Finds roles on job sites, then writes a tailored résumé and cover letter for each opportunity."],
+  ["04", "Database Lookup Agent", "An internal-use-only agent for finding and organizing information across business databases."],
+];
+
 export default function Home() {
   return (
     <main>
@@ -26,6 +33,7 @@ export default function Home() {
       <section className="signal"><div className="wrap signal-inner"><span className="signal-dot" />Currently focused on <strong>agent coordination, useful automation, and a calmer way to work.</strong><span className="signal-date">August 2026</span></div></section>
       <section className="work wrap" id="work"><div className="section-head"><div><p className="eyebrow">Selected work</p><h2>A growing shelf of experiments.</h2></div><p className="section-note">Some are shipped. Some are still becoming. All of them start with a real problem.</p></div><div className="grid">{projects.map((project, index) => <article className={`card card-${(index % 4) + 1}`} key={project.name}><div className="card-top"><span className="number">0{index + 1}</span><span className={`status ${statusClass[project.status]}`}>{project.status}</span></div><p className="card-type">{project.type}</p><h3>{project.name}</h3><p className="card-description">{project.description}</p><div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{project.href && <a href={project.href} target="_blank" rel="noreferrer">Open project ↗</a>}</article>)}</div></section>
       <section className="about wrap" id="about"><div className="about-mark">✦</div><div><p className="eyebrow">The through-line</p><h2>Less noise. More leverage.</h2><p>I’m interested in the space between an idea and the moment it becomes useful. That usually means simple interfaces, thoughtful automation, and systems that make the next action obvious.</p><p>This page is intentionally a living document. New projects, notes, and working versions can be added here as they take shape.</p></div></section>
+      <section className="work wrap"><div className="section-head"><div><p className="eyebrow">In the lab</p><h2>Still taking shape—intentionally.</h2></div><p className="section-note">Agent builds, early-stage systems, experiments, and internal tools.</p></div><div className="grid">{labProjects.map(([number, name, description], index) => <article className={`card card-${(index % 4) + 1}`} key={number}><div className="card-top"><span className="number">{number}</span><span className="status progress">Early stage</span></div><p className="card-type">Lab build</p><h3>{name}</h3><p className="card-description">{description}</p></article>)}</div></section>
       <section className="contact wrap" id="contact"><p className="eyebrow">Have a good problem?</p><h2>Let’s make it<br /><em>less complicated.</em></h2><a className="button primary" href="mailto:hello@jeffreyfliegler.com">Say hello <span>↗</span></a></section>
       <footer className="footer wrap"><span>© 2026 Jeffrey Fliegler</span><span>Built in public, one useful thing at a time.</span></footer>
     </main>
