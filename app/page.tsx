@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 
 const projects = [
   { name: "Hermes Mission Control", type: "AI infrastructure", status: "In Progress", href: "https://getsreviews.app/", description: "A command center for coordinating agents, queues, approvals, memory, handoffs, and live work.", tags: ["Agents", "Orchestration", "Dashboard"] },
+  { name: "Dox Review", type: "Document intelligence", status: "In Progress", href: "https://doxreview.thepointsolutions.com/", description: "A private document review workspace that summarizes long records, preserves page-level citations, and checks claims against the source documents.", tags: ["Documents", "Citations", "Verification"] },
   { name: "Baseball Workshop", type: "Sports technology", status: "Built", href: "https://Baseballworkshop.com", description: "A video-based coaching workspace for players, parents, and coaches to turn swings into useful feedback.", tags: ["Video", "Coaching", "Analysis"] },
   { name: "Marcy", type: "Small business AI", status: "Built", href: "https://www.getmarcy.com/", description: "An AI receptionist that captures leads, answers questions, sends texts, and keeps owners in the loop.", tags: ["Leads", "SMS", "Automation"] },
   { name: "StockFit", type: "Fitness technology", status: "Built", href: "https://stockfit.thepointsolutions.com/", description: "A practical fitness tool built to help people make progress with clearer, more useful guidance.", tags: ["Fitness", "Tooling", "Web app"] },
