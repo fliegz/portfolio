@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "Jeffrey Fliegler — AI systems, built in public",
   description: "A living portfolio of AI products, agents, and experiments built by Jeffrey Fliegler.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
   },
 };
 
